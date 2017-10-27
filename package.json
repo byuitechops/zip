@@ -1,0 +1,23 @@
+{
+  "name": "zip",
+  "version": "1.0.0",
+  "description": "Zips up our newly written files for our conversion tool.",
+  "main": "zip.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byuitechops/zip.git"
+  },
+  "author": "Zachary Williams, Daniel Green",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byuitechops/zip/issues"
+  },
+  "homepage": "https://github.com/byuitechops/zip#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "zip-dir": "^1.0.2"
+  }
+}
