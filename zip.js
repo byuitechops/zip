@@ -8,8 +8,6 @@ module.exports = (course, stepCallback) => {
     course.addModuleReport('zip');
 
     /* Zip that file right up */
-    console.log(course.info.unzippedFilepath);
-    console.log(course.info.altUnzippedFilepath);
     zip(course.info.altUnzippedFilepath, {
       saveTo: course.info.zippedFilepath
     }, function(err, buffer) {
