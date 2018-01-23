@@ -5,7 +5,6 @@ const zip = require('zip-dir');
 const fs = require('fs');
 
 module.exports = (course, stepCallback) => {
-    course.addModuleReport('zip');
 
     /* Zip that file right up */
     zip(course.info.altUnzippedFilepath, {
@@ -15,7 +14,7 @@ module.exports = (course, stepCallback) => {
         stepCallback(err, course);
         return;
       }
-      course.success('zip', 'Course successfully zipped.');
+      course.message('Course successfully zipped');
       stepCallback(null, course);
     });
 };
