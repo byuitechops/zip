@@ -5,16 +5,15 @@ const zip = require('zip-dir');
 const fs = require('fs');
 
 module.exports = (course, stepCallback) => {
-
     /* Zip that file right up */
-    zip(course.info.altUnzippedFilepath, {
-      saveTo: course.info.zippedFilepath
-    }, function(err, buffer) {
-      if (err) {
-        stepCallback(err, course);
-        return;
-      }
-      course.message('Course successfully zipped');
-      stepCallback(null, course);
+    zip(course.info.processedPath, {
+        saveTo: course.info.uploadZipPath
+    }, function (err, buffer) {
+        if (err) {
+            stepCallback(err, course);
+            return;
+        }
+        course.message('Course successfully zipped');
+        stepCallback(null, course);
     });
 };
