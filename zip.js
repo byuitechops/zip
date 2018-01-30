@@ -2,9 +2,9 @@
 /*eslint no-console:1*/
 
 const zip = require('zip-dir');
-const fs = require('fs');
 
 module.exports = (course, stepCallback) => {
+    
     /* Zip that file right up */
     zip(course.info.processedPath, {
         saveTo: course.info.uploadZipPath
