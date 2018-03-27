@@ -19,5 +19,6 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "zip-dir": "^1.0.2"
-  }
+  },
+  "childType": "shell"
 }
