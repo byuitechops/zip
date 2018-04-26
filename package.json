@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/byuitechops/zip#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
     "zip-dir": "^1.0.2"
   },
-  "childType": "shell"
+  "childType": "shell",
+  "devDependencies": {
+    "canvas-wrapper": "github:byuitechops/canvas-wrapper",
+    "tap": "^11.1.4"
+  }
 }
